@@ -49,6 +49,7 @@ public class JacksonCustomOwnerDeserializer extends StdDeserializer<Owner> {
 		String lastName = node.get("lastName").asText(null);
 		String address = node.get("address").asText(null);
 		String city = node.get("city").asText(null);
+        Boolean active = node.get("active").asText(null);
 		String telephone = node.get("telephone").asText(null);
 		if (node.hasNonNull("id")) {
 			owner.setId(node.get("id").asInt());
