@@ -58,7 +58,7 @@ public class JacksonCustomOwnerDeserializer extends StdDeserializer<Owner> {
         owner.setLastName(lastName);
         owner.setAddress(address);
         owner.setCity(city);
-        owner.setActive(active);v
+        owner.setActive(active);
         owner.setTelephone(telephone);
 		return owner;
 	}
