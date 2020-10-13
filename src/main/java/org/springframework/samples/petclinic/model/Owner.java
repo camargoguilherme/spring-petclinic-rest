@@ -67,8 +67,7 @@ public class Owner extends Person {
     private String telephone;
 
     @Column(name = "active")
-    @NotEmpty
-    private String active;
+    private Boolean active;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner", fetch = FetchType.EAGER)
     private Set<Pet> pets;
