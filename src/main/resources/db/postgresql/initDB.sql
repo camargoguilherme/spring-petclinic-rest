@@ -47,6 +47,7 @@ CREATE TABLE IF NOT EXISTS owners (
   last_name VARCHAR(30),
   address VARCHAR(255),
   city VARCHAR(80),
+  active boolean,
   telephone VARCHAR(20),
   CONSTRAINT pk_owners PRIMARY KEY (id)
 );
